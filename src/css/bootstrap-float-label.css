@@ -1,0 +1,201 @@
+.has-float-label {
+    position: relative
+}
+
+.has-float-label label {
+    position: absolute;
+    cursor: text;
+    font-size: 75%;
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    top: -.5em;
+    left: 12px;
+    z-index: 3;
+    line-height: 1;
+    padding: 0 1px
+}
+
+.has-float-label label::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    top: 50%;
+    left: -.2em;
+    right: -.2em;
+    z-index: -1
+}
+
+.has-float-label .form-control::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+    opacity: 0
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)+label {
+    font-size: 150%;
+    opacity: .5;
+    top: .3em;
+    font-weight: 400
+}
+
+.input-group .has-float-label {
+    display: table-cell
+}
+
+.input-group .has-float-label .form-control {
+    border-radius: 4px
+}
+
+.input-group .has-float-label:not(:last-child) .form-control {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0
+}
+
+.input-group .has-float-label:not(:first-child) .form-control {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -1px
+}
+
+.has-float-label .form-control {
+    padding-top: 5px;
+}
+/*- placeholder-shown -*/
+
+/*=========FROM BOOTSTRAP=========*/
+:root {
+  --input-padding-x: 1rem;
+  --input-padding-y: 1rem;
+}
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 10px;
+  color: #777;
+}
+.form-label-group .form-control {
+    height: initial;
+}
+
+/*
+    working example
+    <div class="form-label-group">
+        <input id="inputPasswordas" type="text" class="form-control" placeholder="123" name="">
+        <label for="inputPasswordas">Test 123</label>
+    </div>
+*/
+
+/*=======from shopify=======*/
+.vd-float-label{
+    position: relative;
+}
+.vd-float-label .form-control {
+    height: 43px !important;
+    /*padding: 0.92857em 0.78571em;*/
+    position: relative;
+    padding-top: 17px;
+    padding-top: 1.25em; /*1.5em;*/
+    padding-bottom: 0.35714em;
+}
+.vd-float-label.vd-empty-val .form-control {
+    padding: 0.92857em 0.78571em;
+}
+.vd-float-label label {
+    position: absolute;
+    font-size: 12px;
+    padding: 2px 13px !important;
+    opacity: 1;
+    transform: none;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 100%;
+    display: block;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+.vd-float-label.vd-empty-val label {
+    color :red;
+    z-index: -1;
+}
+
+/*.vd-float-label .form-control::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.vd-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+    opacity: 0
+}
+
+.vd-float-label .form-control:placeholder-shown:not(:focus) ~ label {
+    font-size: 150%;
+    opacity: .5;
+    top: .3em;
+    font-weight: 400
+}
+*/
+/*
+animate-floating-labels
+floating-labels
+ */

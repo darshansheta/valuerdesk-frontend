@@ -1,0 +1,5 @@
+export const ALL_COMPANY = 'ALL_COMPANY'
+export const SET_PARAMS = 'SET_PARAMS'
+export const LAST_DAYS = 'LAST_DAYS'
+export const ALL_FIELDS = 'ALL_FIELDS'
+export const SET_FILTERS = 'SET_FILTERS'
